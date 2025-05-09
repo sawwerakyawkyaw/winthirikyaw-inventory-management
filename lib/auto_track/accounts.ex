@@ -8,6 +8,10 @@ defmodule AutoTrack.Accounts do
 
   alias AutoTrack.Accounts.{User, UserToken, UserNotifier}
 
+  def list_users do
+    Repo.all(User)
+  end
+
   ## Database getters
 
   @doc """
