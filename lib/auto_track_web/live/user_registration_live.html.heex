@@ -1,0 +1,170 @@
+<div class="min-h-screen flex flex-col lg:flex-row">
+  <!-- Left Panel -->
+  <div class="hidden lg:flex w-1/2 bg-color-primary flex-col justify-center items-center p-10">
+    <div class="flex items-center gap-6">
+      <div class="flex-1 flex justify-center items-center">
+        <img src={~p"/images/logo.png"} alt="Logo" class="h-32" />
+      </div>
+      <div class="flex flex-col text-center gap-4">
+        <div class="text-white text-6xl font-njaun">
+          ဝင်းသီရိကျော်
+        </div>
+        <div class="text-white text-2xl font-angoun">
+          (ဂျပန်ကားပစ္စည်းဆိုင်)
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-6 mt-12">
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-check-icon lucide-circle-check"
+        >
+          <circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" />
+        </svg>
+        <div class="text-white text-lg font-tharLon">စျေးနှုန်းချိုသာပြီး အရည်အသွေးကောင်းမွန်ခြင်း</div>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-check-icon lucide-circle-check"
+        >
+          <circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" />
+        </svg>
+        <div class="text-white text-lg font-tharLon">အမျိုးမျိုးသောအပိုပစ္စည်း ရနိုင်ခြင်း</div>
+      </div>
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-check-icon lucide-circle-check"
+        >
+          <circle cx="12" cy="12" r="10" /><path d="m9 12 2 2 4-4" />
+        </svg>
+        <div class="text-white text-lg font-tharLon">ယုံကြည်စိတ်ချရသော ဝန်ဆောင်မှု</div>
+      </div>
+    </div>
+  </div>
+
+<!-- Right Panel (Login Form) -->
+  <div class="w-full lg:w-1/2 flex flex-col justify-center items-center min-h-screen lg:min-h-0 p-4 lg:p-10 font-mon">
+    <!-- Mobile Logo and Text -->
+    <div class="lg:hidden flex items-center gap-2 p-4 mb-6">
+      <div class="flex-1 flex justify-center items-center">
+        <img src={~p"/images/logo.png"} alt="Logo" class="h-24" />
+      </div>
+      <div class="flex flex-col text-center gap-1">
+        <div class="text-color-primary text-3xl font-njaun">
+          ဝင်းသီရိကျော်
+        </div>
+        <div class="text-color-primary text-md font-bold font-angoun">
+          (ဂျပန်ကားပစ္စည်းဆိုင်)
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-white md:mt-0 sm:max-w-md xl:p-0 mx-auto">
+      <div class="p-3 sm:p-4">
+        <h1 class="text-lg mb-6 sm:mb-6 sm:text-lg font-bold leading-tight text-gray-950 md:text-2xl">
+          အကောင့်ဖွင့်ရန်
+        </h1>
+        <.simple_form
+          for={@form}
+          id="registration_form"
+          phx-submit="save"
+          phx-change="validate"
+          phx-trigger-action={@trigger_submit}
+          action={~p"/users/log_in?_action=registered"}
+          method="post"
+        >
+          <.error :if={@check_errors}>
+            Oops, something went wrong! Please check the errors below.
+          </.error>
+          <div>
+            <label for="name" class="block mb-1 text-md font-semibold text-gray-950 md:text-sm">
+              သင့်နာမည်
+            </label>
+            <.input
+              field={@form[:name]}
+              type="text"
+              id="name"
+              class="bg-gray-50 border border-color-primary text-gray-950 rounded-md focus:ring-color-primary focus:border-color-primary block w-full mt-2 p-2 placeholder:text-xs"
+              placeholder="နာမည်ထည့်ပါ"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="block mb-1 text-md font-semibold text-gray-950 md:text-sm">
+              သင့်အီးမေးလ်
+            </label>
+            <.input
+              field={@form[:email]}
+              type="email"
+              id="email"
+              class="bg-gray-50 border border-color-primary text-gray-950 rounded-md focus:ring-color-primary focus:border-color-primary block w-full mt-2 p-2 placeholder:text-xs"
+              placeholder="အီးမေးလ်ထည့်ပါ"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="password"
+              class="block mb-1 text-md font-semibold text-gray-950 md:text-sm"
+            >
+              လျှို့ဝှက်နံပါတ်
+            </label>
+            <.input
+              field={@form[:password]}
+              type="password"
+              id="password"
+              class="bg-gray-50 border border-color-primary text-gray-950 rounded-md focus:ring-color-primary focus:border-color-primary block w-full mt-2 p-2 placeholder:text-xs"
+              placeholder="••••••••••••••••"
+              required
+            />
+          </div>
+          <:actions>
+            <.button
+              phx-disable-with="အကောင့်ဖွင့်နေသည်..."
+              class="w-full transform transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-lg"
+            >
+              အကောင့်တစ်ခုဖန်တီးပါ <span aria-hidden="true">→</span>
+            </.button>
+          </:actions>
+          <:actions>
+            <p class="text-xs font-light text-gray-950 md:text-sm">
+              အကောင့်ရှိပြီးသားလား?
+              <.link
+                navigate={~p"/users/log_in"}
+                class="font-semibold text-orange-500 hover:underline"
+              >
+                အခုတင်ပင်ဝင်ရောက်ပါ
+              </.link>
+            </p>
+          </:actions>
+        </.simple_form>
+      </div>
+    </div>
+  </div>
+</div>

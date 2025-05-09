@@ -14,8 +14,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
-      }
+        'color-primary': '#00265d',
+        'color-secondary': '#004098'
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        njaun: ["MyanmarNjaun"],
+        lobster: ["Lobster"],
+        angoun: ["MyanmarAngoun"],
+        mon: ["MON3Anonta1"],
+        tharLon: ["TharLon"]
+      },
     },
   },
   plugins: [

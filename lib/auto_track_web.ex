@@ -90,6 +90,9 @@ defmodule AutoTrackWeb do
       # Core UI components
       import AutoTrackWeb.CoreComponents
 
+      # UI components
+      use AutoTrackWeb.Components.UI
+
       # Shortcut for generating JS commands
       alias Phoenix.LiveView.JS
 
