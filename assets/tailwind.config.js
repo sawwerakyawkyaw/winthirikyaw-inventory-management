@@ -23,7 +23,8 @@ module.exports = {
         lobster: ["Lobster"],
         angoun: ["MyanmarAngoun"],
         mon: ["MON3Anonta1"],
-        tharLon: ["TharLon"]
+        tharLon: ["TharLon"],
+        paladins: ["paladins"]
       },
     },
   },

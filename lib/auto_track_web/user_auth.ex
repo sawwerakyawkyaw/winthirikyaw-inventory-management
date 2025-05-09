@@ -145,6 +145,12 @@ defmodule AutoTrackWeb.UserAuth do
         live "/profile", ProfileLive, :index
       end
   """
+  def on_mount(:put_locale, _params, session, socket) do
+    Gettext.put_locale(session["locale"])
+    socket = Phoenix.Component.assign_new(socket, :locale, fn -> session["locale"] end)
+    {:cont, socket}
+  end
+
   def on_mount(:mount_current_user, _params, session, socket) do
     {:cont, mount_current_user(socket, session)}
   end

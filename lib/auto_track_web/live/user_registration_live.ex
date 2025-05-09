@@ -1,5 +1,6 @@
 defmodule AutoTrackWeb.UserRegistrationLive do
   use AutoTrackWeb, :live_view
+  use Gettext, backend: AutoTrackWeb.Gettext
 
   alias AutoTrack.Accounts
   alias AutoTrack.Accounts.User

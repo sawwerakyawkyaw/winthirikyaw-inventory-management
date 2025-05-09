@@ -1,5 +1,6 @@
 defmodule AutoTrackWeb.UserLoginLive do
   use AutoTrackWeb, :live_view
+  use Gettext, backend: AutoTrackWeb.Gettext
 
   def mount(_params, _session, socket) do
     email = Phoenix.Flash.get(socket.assigns.flash, :email)

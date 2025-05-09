@@ -1,0 +1,164 @@
+## "msgid"s in this file come from POT (.pot) files.
+###
+### Do not add, change, or remove "msgid"s manually here as
+### they're tied to the ones in the corresponding POT file
+### (with the same domain).
+###
+### Use "mix gettext.extract --merge" or "mix gettext.merge"
+### to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: my\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: lib/auto_track_web/components/core_components.ex:482
+#, elixir-autogen, elixir-format
+msgid "Actions"
+msgstr ""
+
+#: lib/auto_track_web/live/user_login_live.html.heex:42
+#: lib/auto_track_web/live/user_registration_live.html.heex:34
+#, elixir-autogen, elixir-format
+msgid "Affordable prices with high quality"
+msgstr "စျေးနှုန်းချိုသာပြီးအရည်အသွေးကောင်းမွန်ခြင်း"
+
+#: lib/auto_track_web/live/user_registration_live.html.heex:164
+#, elixir-autogen, elixir-format
+msgid "Already have an account?"
+msgstr "အကောင့်ရှိပြီးသားလား?"
+
+#: lib/auto_track_web/components/core_components.ex:160
+#, elixir-autogen, elixir-format
+msgid "Attempting to reconnect"
+msgstr ""
+
+#: lib/auto_track_web/live/user_login_live.html.heex:176
+#: lib/auto_track_web/live/user_registration_live.html.heex:97
+#: lib/auto_track_web/live/user_registration_live.html.heex:159
+#, elixir-autogen, elixir-format
+msgid "Create an account"
+msgstr "အကောင့်ဖွင့်ပါ"
+
+#: lib/auto_track_web/live/user_registration_live.html.heex:156
+#, elixir-autogen, elixir-format
+msgid "Creating account..."
+msgstr "အကောင့်ဖွင့်နေပါသည်..."
+
+#: lib/auto_track_web/live/user_login_live.html.heex:171
+#, elixir-autogen, elixir-format
+msgid "Don't have an account?"
+msgstr "အကောင့်မရှိသေးဘူးလား?"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:126
+#: lib/auto_track_web/live/user_registration_live.html.heex:134
+#, elixir-autogen, elixir-format
+msgid "Enter your email"
+msgstr "သင့်အီးမေးလ်ရိုက်ထည့်ပါ"
+
+#: lib/auto_track_web/live/user_registration_live.html.heex:121
+#, elixir-autogen, elixir-format
+msgid "Enter your name"
+msgstr "သင့်အမည်ရိုက်ထည့်ပါ"
+
+#: lib/auto_track_web/components/core_components.ex:151
+#, elixir-autogen, elixir-format
+msgid "Error!"
+msgstr "အမှားတစ်ခုရှိပါသည်!"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:157
+#, elixir-autogen, elixir-format
+msgid "Forgot your password?"
+msgstr "သင့်စကားဝှက်မေ့သွားသလား?"
+
+#: lib/auto_track_web/components/core_components.ex:172
+#, elixir-autogen, elixir-format
+msgid "Hang in there while we get back on track"
+msgstr ""
+
+#: lib/auto_track_web/live/user_login_live.html.heex:162
+#, elixir-autogen, elixir-format
+msgid "Logging in..."
+msgstr "အကောင့်ဝင်နေပါသည်..."
+
+#: lib/auto_track_web/live/user_login_live.html.heex:166
+#: lib/auto_track_web/live/user_registration_live.html.heex:169
+#, elixir-autogen, elixir-format
+msgid "Login"
+msgstr "အခုတင်ပင်ဝင်ရောက်ပါ"
+
+#: lib/auto_track_web/live/user_registration_live.html.heex:110
+#, elixir-autogen, elixir-format
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "အိုး… တစ်ခုခုမှားနေပါသည်။ အောက်ဖော်ပြပါအမှားများကိုစစ်ဆေးပါ။"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:135
+#: lib/auto_track_web/live/user_registration_live.html.heex:143
+#, elixir-autogen, elixir-format
+msgid "Password"
+msgstr "စကားဝှက်"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:80
+#: lib/auto_track_web/live/user_registration_live.html.heex:72
+#, elixir-autogen, elixir-format
+msgid "Reliable and trustworthy service"
+msgstr "ယုံကြည်စိတ်ချရသောဝန်ဆောင်မှု"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:151
+#, elixir-autogen, elixir-format
+msgid "Remember me"
+msgstr "မှတ်သားထားပါ"
+
+#: lib/auto_track_web/components/core_components.ex:167
+#, elixir-autogen, elixir-format
+msgid "Something went wrong!"
+msgstr "တစ်ခုခုမှားနေပါသည်!"
+
+#: lib/auto_track_web/components/core_components.ex:150
+#, elixir-autogen, elixir-format
+msgid "Success!"
+msgstr "အောင်မြင်ပါသည်!"
+
+#: lib/auto_track_web/components/core_components.ex:155
+#, elixir-autogen, elixir-format
+msgid "We can't find the internet"
+msgstr "အင်တာနက်ကိုရှာမရပါ။"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:113
+#, elixir-autogen, elixir-format
+msgid "Welcome back"
+msgstr "ပြန်လည်ကြိုဆိုပါတယ်!"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:61
+#: lib/auto_track_web/live/user_registration_live.html.heex:53
+#, elixir-autogen, elixir-format
+msgid "Wide variety of spare parts available"
+msgstr "အမျိုးမျိုးသောအပိုပစ္စည်းရနိုင်ခြင်း"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:119
+#: lib/auto_track_web/live/user_registration_live.html.heex:127
+#, elixir-autogen, elixir-format
+msgid "Your email"
+msgstr "သင့်အီးမေးလ်"
+
+#: lib/auto_track_web/live/user_registration_live.html.heex:114
+#, elixir-autogen, elixir-format
+msgid "Your name"
+msgstr "သင့်အမည်"
+
+#: lib/auto_track_web/components/core_components.ex:76
+#: lib/auto_track_web/components/core_components.ex:130
+#, elixir-autogen, elixir-format
+msgid "close"
+msgstr "ပိတ်ပါ"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:21
+#: lib/auto_track_web/live/user_login_live.html.heex:106
+#, elixir-autogen, elixir-format
+msgid "Automotive Spare Parts"
+msgstr "ဂျပန်ကားပစ္စည်းဆိုင်"
+
+#: lib/auto_track_web/live/user_login_live.html.heex:14
+#: lib/auto_track_web/live/user_login_live.html.heex:99
+#, elixir-autogen, elixir-format
+msgid "Win Thiri Kyaw"
+msgstr "ဝင်းသီရိကျော်"
