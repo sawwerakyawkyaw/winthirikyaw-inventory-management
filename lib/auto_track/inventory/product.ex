@@ -57,7 +57,7 @@ defmodule AutoTrack.Inventory.Product do
     |> validate_number(:buying_price, greater_than_or_equal_to: 0)
     |> validate_number(:selling_price, greater_than_or_equal_to: 0)
     |> validate_selling_price()
-    |> validate_date(:purchase_date)
+    |> check_constraint(:purchase_date, name: :purchase_date_not_in_future, message: "cannot be in the future")
     |> validate_length(:purchased_from, min: 2, max: 100)
     |> validate_image_path()
   end
@@ -74,21 +74,6 @@ defmodule AutoTrack.Inventory.Product do
 
       _ ->
         changeset
-    end
-  end
-
-  # Validates that purchase date is not in the future
-  defp validate_date(changeset, field) do
-    case get_change(changeset, field) do
-      nil ->
-        changeset
-
-      date ->
-        if Date.compare(date, Date.utc_today()) == :gt do
-          add_error(changeset, field, "cannot be in the future")
-        else
-          changeset
-        end
     end
   end
 

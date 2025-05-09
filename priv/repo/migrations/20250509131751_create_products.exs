@@ -16,5 +16,10 @@ defmodule AutoTrack.Repo.Migrations.CreateProducts do
 
       timestamps(type: :utc_datetime)
     end
+
+    # Add check constraint to ensure purchase_date is not in the future
+    create constraint(:products, :purchase_date_not_in_future,
+      check: "purchase_date <= CURRENT_DATE"),
+      comment: "Purchase date cannot be in the future"
   end
 end
