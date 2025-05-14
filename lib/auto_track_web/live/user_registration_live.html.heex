@@ -104,11 +104,19 @@
         <img src={~p"/images/logo.png"} alt="Logo" class="h-24" />
       </div>
       <div class="flex flex-col text-center gap-1">
-        <div class="text-color-primary text-3xl font-njaun">
-          ဝင်းသီရိကျော်
+        <div class={[
+          "text-color-primary",
+          @locale == "my" && ["font-njaun", "text-4xl", "font-bold"],
+          @locale == "en" && ["font-paladins", "text-xl", "font-bold"]
+        ]}>
+          {gettext("Win Thiri Kyaw")}
         </div>
-        <div class="text-color-primary text-md font-bold font-angoun">
-          (ဂျပန်ကားပစ္စည်းဆိုင်)
+        <div class={[
+          "text-color-primary text-md",
+          @locale == "my" && ["font-angoun", "text-md", "font-bold"],
+          @locale == "en" && ["font-inter", "text-sm", "font-bold"]
+        ]}>
+          ({gettext("Automotive Spare Parts")})
         </div>
       </div>
     </div>

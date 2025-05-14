@@ -16,13 +16,13 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:42
-#: lib/auto_track_web/live/user_registration_live.html.heex:34
+#: lib/auto_track_web/live/user_login_live.html.heex:47
+#: lib/auto_track_web/live/user_registration_live.html.heex:47
 #, elixir-autogen, elixir-format
 msgid "Affordable prices with high quality"
 msgstr ""
 
-#: lib/auto_track_web/live/user_registration_live.html.heex:164
+#: lib/auto_track_web/live/user_registration_live.html.heex:193
 #, elixir-autogen, elixir-format
 msgid "Already have an account?"
 msgstr ""
@@ -32,30 +32,30 @@ msgstr ""
 msgid "Attempting to reconnect"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:176
-#: lib/auto_track_web/live/user_registration_live.html.heex:97
-#: lib/auto_track_web/live/user_registration_live.html.heex:159
+#: lib/auto_track_web/live/user_login_live.html.heex:186
+#: lib/auto_track_web/live/user_registration_live.html.heex:126
+#: lib/auto_track_web/live/user_registration_live.html.heex:188
 #, elixir-autogen, elixir-format
 msgid "Create an account"
 msgstr ""
 
-#: lib/auto_track_web/live/user_registration_live.html.heex:156
+#: lib/auto_track_web/live/user_registration_live.html.heex:185
 #, elixir-autogen, elixir-format
 msgid "Creating account..."
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:171
+#: lib/auto_track_web/live/user_login_live.html.heex:181
 #, elixir-autogen, elixir-format
 msgid "Don't have an account?"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:126
-#: lib/auto_track_web/live/user_registration_live.html.heex:134
+#: lib/auto_track_web/live/user_login_live.html.heex:139
+#: lib/auto_track_web/live/user_registration_live.html.heex:163
 #, elixir-autogen, elixir-format
 msgid "Enter your email"
 msgstr ""
 
-#: lib/auto_track_web/live/user_registration_live.html.heex:121
+#: lib/auto_track_web/live/user_registration_live.html.heex:150
 #, elixir-autogen, elixir-format
 msgid "Enter your name"
 msgstr ""
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Error!"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:157
+#: lib/auto_track_web/live/user_login_live.html.heex:167
 #, elixir-autogen, elixir-format
 msgid "Forgot your password?"
 msgstr ""
@@ -75,35 +75,35 @@ msgstr ""
 msgid "Hang in there while we get back on track"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:162
+#: lib/auto_track_web/live/user_login_live.html.heex:172
 #, elixir-autogen, elixir-format
 msgid "Logging in..."
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:166
-#: lib/auto_track_web/live/user_registration_live.html.heex:169
+#: lib/auto_track_web/live/user_login_live.html.heex:176
+#: lib/auto_track_web/live/user_registration_live.html.heex:198
 #, elixir-autogen, elixir-format
 msgid "Login"
 msgstr ""
 
-#: lib/auto_track_web/live/user_registration_live.html.heex:110
+#: lib/auto_track_web/live/user_registration_live.html.heex:139
 #, elixir-autogen, elixir-format
 msgid "Oops, something went wrong! Please check the errors below."
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:135
-#: lib/auto_track_web/live/user_registration_live.html.heex:143
+#: lib/auto_track_web/live/user_login_live.html.heex:145
+#: lib/auto_track_web/live/user_registration_live.html.heex:172
 #, elixir-autogen, elixir-format
 msgid "Password"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:80
-#: lib/auto_track_web/live/user_registration_live.html.heex:72
+#: lib/auto_track_web/live/user_login_live.html.heex:93
+#: lib/auto_track_web/live/user_registration_live.html.heex:93
 #, elixir-autogen, elixir-format
 msgid "Reliable and trustworthy service"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:151
+#: lib/auto_track_web/live/user_login_live.html.heex:161
 #, elixir-autogen, elixir-format
 msgid "Remember me"
 msgstr ""
@@ -123,24 +123,24 @@ msgstr ""
 msgid "We can't find the internet"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:113
+#: lib/auto_track_web/live/user_login_live.html.heex:126
 #, elixir-autogen, elixir-format
 msgid "Welcome back"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:61
-#: lib/auto_track_web/live/user_registration_live.html.heex:53
+#: lib/auto_track_web/live/user_login_live.html.heex:70
+#: lib/auto_track_web/live/user_registration_live.html.heex:70
 #, elixir-autogen, elixir-format
 msgid "Wide variety of spare parts available"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:119
-#: lib/auto_track_web/live/user_registration_live.html.heex:127
+#: lib/auto_track_web/live/user_login_live.html.heex:132
+#: lib/auto_track_web/live/user_registration_live.html.heex:156
 #, elixir-autogen, elixir-format
 msgid "Your email"
 msgstr ""
 
-#: lib/auto_track_web/live/user_registration_live.html.heex:114
+#: lib/auto_track_web/live/user_registration_live.html.heex:143
 #, elixir-autogen, elixir-format
 msgid "Your name"
 msgstr ""
@@ -151,14 +151,18 @@ msgstr ""
 msgid "close"
 msgstr ""
 
-#: lib/auto_track_web/live/user_login_live.html.heex:21
-#: lib/auto_track_web/live/user_login_live.html.heex:106
+#: lib/auto_track_web/live/user_login_live.html.heex:22
+#: lib/auto_track_web/live/user_login_live.html.heex:119
+#: lib/auto_track_web/live/user_registration_live.html.heex:22
+#: lib/auto_track_web/live/user_registration_live.html.heex:119
 #, elixir-autogen, elixir-format
 msgid "Automotive Spare Parts"
 msgstr ""
 
 #: lib/auto_track_web/live/user_login_live.html.heex:14
-#: lib/auto_track_web/live/user_login_live.html.heex:99
+#: lib/auto_track_web/live/user_login_live.html.heex:112
+#: lib/auto_track_web/live/user_registration_live.html.heex:14
+#: lib/auto_track_web/live/user_registration_live.html.heex:112
 #, elixir-autogen, elixir-format
 msgid "Win Thiri Kyaw"
 msgstr ""
