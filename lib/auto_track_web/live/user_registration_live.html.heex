@@ -95,7 +95,7 @@
       </div>
     </div>
   </div>
-
+  
 <!-- Right Panel (Login Form) -->
   <div class="w-full lg:w-1/2 flex flex-col justify-center items-center min-h-screen lg:min-h-0 p-4 lg:p-10 font-mon">
     <!-- Mobile Logo and Text -->
@@ -122,7 +122,10 @@
     </div>
     <div class="w-full bg-white md:mt-0 sm:max-w-md xl:p-0 mx-auto">
       <div class="p-3 sm:p-4">
-        <h1 class={["text-lg mb-6 sm:text-lg font-bold leading-tight text-color-primary md:text-2xl", @locale == "en" && ["font-inter"]] }>
+        <h1 class={[
+          "text-lg mb-6 sm:text-lg font-bold leading-tight text-color-primary md:text-2xl",
+          @locale == "en" && ["font-inter"]
+        ]}>
           {gettext("Create an account")}
         </h1>
         <.toggle locale={@locale} class="mb-6" />
@@ -139,7 +142,13 @@
             {gettext("Oops, something went wrong! Please check the errors below.")}
           </.error>
           <div>
-            <label for="name" class={["block mb-1 text-md font-semibold text-gray-950 md:text-sm", @locale == "en" && ["font-inter"]]}>
+            <label
+              for="name"
+              class={[
+                "block mb-1 text-md font-semibold text-gray-950 md:text-sm",
+                @locale == "en" && ["font-inter"]
+              ]}
+            >
               {gettext("Your name")}
             </label>
             <.input
@@ -152,7 +161,13 @@
             />
           </div>
           <div>
-            <label for="email" class={["block mb-1 text-md font-semibold text-gray-950 md:text-sm", @locale == "en" && ["font-inter"]]}>
+            <label
+              for="email"
+              class={[
+                "block mb-1 text-md font-semibold text-gray-950 md:text-sm",
+                @locale == "en" && ["font-inter"]
+              ]}
+            >
               {gettext("Your email")}
             </label>
             <.input
@@ -167,7 +182,10 @@
           <div>
             <label
               for="password"
-              class={["block mb-1 text-md font-semibold text-gray-950 md:text-sm", @locale == "en" && ["font-inter"]]}
+              class={[
+                "block mb-1 text-md font-semibold text-gray-950 md:text-sm",
+                @locale == "en" && ["font-inter"]
+              ]}
             >
               {gettext("Password")}
             </label>
@@ -189,11 +207,17 @@
             </.button>
           </:actions>
           <:actions>
-            <p class={["text-xs font-light text-gray-950 md:text-sm", @locale == "en" && ["font-inter"]]}>
+            <p class={[
+              "text-xs font-light text-gray-950 md:text-sm",
+              @locale == "en" && ["font-inter"]
+            ]}>
               {gettext("Already have an account?")}
               <.link
                 navigate={~p"/users/log_in"}
-                class={["font-semibold text-orange-500 hover:underline", @locale == "en" && ["font-inter"]]}
+                class={[
+                  "font-semibold text-orange-500 hover:underline",
+                  @locale == "en" && ["font-inter"]
+                ]}
               >
                 {gettext("Login")}
               </.link>
