@@ -1,4 +1,4 @@
-defmodule AutoTrack.Repo.Migrations.AddUserName do
+defmodule AutoTrack.Repo.Migrations.CreateUserName do
   use Ecto.Migration
 
   def change do
