@@ -24,7 +24,9 @@ defmodule AutoTrackWeb.Router do
 
     get "/", PageController, :home
     live "/test", TestLive, :index
-    live "/products", CreateProductLive, :index
+    live "/product-types", ProductTypeListLive
+    live "/product-types/:product_type_id/products", ProductListByProductTypeLive, :index
+    live "/products/new", CreateProductLive
 
     put "/locale/:locale", LocaleController, :update
   end
